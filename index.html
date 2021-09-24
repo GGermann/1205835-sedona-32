@@ -1,12 +1,161 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+<body class="page-body">
+  <header class="main-header">
+    <nav class="header-navigation">
+      <ul class="navigation-list">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">О Седоне</a></li>
+        <li><a href="#">Гостиницы</a></li>
+      </ul>
+      <a class="navigation-logo" href="https://htmlacademy.ru/">
+        <img src="#" width="138" height="70" alt="логотип города Седона">
+      </a>
+    </nav>
+    <div class="header-search">
+      <a class="icon-loupe" href="#">
+        <img src="#" width="18" height="18" alt="иконка поиска">
+      </a>
+      <div class="header-favorites">
+        <a class="icon-favorites" href="#">
+          <img src="#" width="31" height="27" alt="иконка избранного">
+        </a>
+        <div class="header-popup">
+          <ul class="header-popup-list">
+            <li class="header-popap-item">
+              <img class="popap-foto" src="#" width="48" height="48" alt="Фото Седоны">
+              <p class="popap-name-hotel">Deset Quail Inn</p>
+              <p>Мотель</p>
+              <img class="popap-basket" src="#" width="16" height="16" alt="Иконка корзины">
+            </li>
+            <li class="header-popap-item">
+              <img class="popap-foto" src="#" width="48" height="48" alt="Фото Седоны">
+              <p class="popap-name-hotel">Villas at Poco Diablo</p>
+              <p>Мотель</p>
+              <img class="popap-basket" src="#" width="16" height="16" alt="Иконка корзины">
+            </li>
+          </ul>
+          <a class="popap-button" href="#">Все избранные</a>
+        </div>
+      </div>
+      <a class="header-button" href="#">Хочу сюда!</a>
+    </div>
+  </header>
+  <main class="page-index">
+    <h1 class="visually-hidden">Приветствие города Седона</h1>
+    <div class="one-block-sedona">
+      <section class="welcome-sedona">
+        <h2 class="visually-hidden">Приветствие города Седона</h2>
+        <img class="foto-sedona" src="#" width="1200" height="485"
+          alt="приветствие на фоне красивых окрестностях города Седоны">
+      </section>
+      <section class="description">
+        <h2 class="city-description">Седона-небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
+        <p>Рассмотрим 5 причин, по которым Седона кручу, чем Гранд каньон!</p>
+      </section>
+    </div>
+    <div class="advantage-sedona">
+      <h2 class="visually-hidden"> Преимущества и особенности города Седона</h2>
+      <section class="advantage-sedona-one">
+        <div class="advantage-block-one">
+          <h3 class="advantages-caption">Настоящий городок</h3>
+          <p class="advantages-caption-number">-№1-</p>
+          <p>Седона-не аттракцион <br> для туристов, там <br> течет своя жизнь</p>
+        </div>
+        <img src="#" width="800" height="384" alt="фотография улицы города Седона">
+      </section>
+      <section class="benefits-one">
+        <ul class="advantages-list-one">
+          <li class="advantages-item-one">
+            <img src="#" width="75" height="72" alt="иконка домика">
+            <h3>Жильё</h3>
+            <p>Рекомендуем пожить <br> в настоящем мотеле, <br> всё как в кино!</p>
+          </li>
+          <li class="advantages-item-two">
+            <img src="#" width="74" height="70" alt="иконка бургера">
+            <h3>Еда</h3>
+            <p>Всегда заказывайте <br> топовый фирменный бургер,<br> вы не разочаруетесь!</p>
+          </li>
+          <li class="advantages-item-one">
+            <img src="#" width="64" height="76" alt="Иконка подарка">
+            <h3>Сувениры</h3>
+            <p>Не только китайского,<br> но и настоящего местного <br> производства!</p>
+          </li>
+        </ul>
+      </section>
+      <section class="advantage-sedona-two">
+        <img src="#" width="800" height="384" alt="фотография природы города Седона">
+        <div class="advantage-block-two">
+          <h3 class="advantages-caption">Там есть <br> мост дьявола</h3>
+          <p class="advantages-caption-number">-№2-</p>
+          <p>Да, по нему можно пройти!<br> Если вы осмелитесь, <br> разумеется</p>
+        </div>
+      </section>
+      <section class="benefits-two">
+        <ul class="advantages-list-two">
+          <li class="advantages-item-two">
+            <h3>Небольшая <br> площадь</h3>
+            <p>-№3-</p>
+            <p>Все достопримечательности <br> находятся очень близко</p>
+          </li>
+          <li class="advantages-item-three">
+            <h3>Крисивая <br> дорога</h3>
+            <p>-№4-</p>
+            <p>Ехать в Седону из Лас-Вегаса <br> совсем не скучно!</p>
+          </li>
+          <li class="advantages-item-one">
+            <h3>Мало <br> туристов</h3>
+            <p>-№4-</p>
+            <p>Большинство едет в Гранд <br> Каньон и толпится там</p>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <section class="find-hotel">
+      <h2>Заинтересовались?</h2>
+      <p>Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения в Седоне</p>
+      <a href="#">Поиск гостиницы в Седоне</a>
+    </section>
+    <article class="index-subscription">
+      <h2>Подпишитесь на рассылку</h2>
+      <p>Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
+      <form class="form-subscription" action="#" method="get">
+        <input type="email" name="yourmail" placeholder="Ваш e-mail" required>
+        <input type="submit" value="подписаться">
+      </form>
+    </article>
+  </main>
+  <footer class="main-footer">
+    <div class="index-footer">
+      <ul class="socials-list">
+        <li>
+          <a href="https://www.twitter.com/htmlacademy_ru" aria-label="твиттер">
+            <img src="#" width="18" height="15" alt="Иконка твиттера">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/htmlacademy/" aria-label="фейсбук">
+            <img src="#" width="10" height="18" alt="Иконка фейсбука">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/htmlacademy/" aria-label="инстаграмм">
+            <img src="#" width="20" height="16" alt="Иконка инстаграмма">
+          </a>
+        </li>
+      </ul>
+      <a class="phone" href="+7(812)812-12-12">+7(812)812-12-12</a>
+      <a href="https://htmlacademy.ru/" aria-label="htmlacademy">
+        <img src="#" width="115" height="34" alt="Иконка htmlacademy">
+      </a>
+    </div>
+  </footer>
+  <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a
+      href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+</body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
-  </body>
 </html>
