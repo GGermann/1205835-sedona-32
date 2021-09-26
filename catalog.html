@@ -29,17 +29,19 @@
           <img class="popap-foto" src="#" width="48" height="48" alt="Фото Седоны">
           <p class="popap-name-hotel">Deset Quail Inn</p>
           <p>Мотель</p>
-          <img class="popap-basket" src="#" width="16" height="16" alt="Иконка корзины">
+          <button class="popap-basket" type="submit" aria-label="корзина"><img src="#" width="16" height="16"
+              alt="Иконка корзины"></button>
         </li>
         <li class="header-popap-item">
           <img class="popap-foto" src="#" width="48" height="48" alt="Фото Седоны">
           <p class="popap-name-hotel">Villas at Poco Diablo</p>
           <p>Мотель</p>
-          <img class="popap-basket" src="#" width="16" height="16" alt="Иконка корзины">
+          <button class="popap-basket" type="submit" aria-label="корзина"><img src="#" width="16" height="16"
+              alt="Иконка корзины"></button>
         </li>
       </ul>
       <a class="popap-button" href="#">Все избранные</a>
-  </div>
+    </div>
   </header>
   <main class="main-inner">
     <div class="catalog-inner">
@@ -126,7 +128,7 @@
             </label>
           </fieldset>
           <button class="button-apply" type="submit">Применить</button>
-          <button class="button-reset" type="submit">Сбросить</button>
+          <button class="button-reset" type="reset">Сбросить</button>
         </form>
       </section>
     </div>
@@ -141,15 +143,15 @@
         </select>
         <button class="visually-hidden" type="submit">Отсортировать продукты</button>
       </form>
-      <a href="#" class="button-light">
-        <span class="visually-hidden">Показать карточки</span>
-      </a>
-      <a href="#" class="button-light">
-        <span class="visually-hidden">Показать карточку</span>
-      </a>
-      <a href="#" class="button button-dark">
-        <span class="visually-hidden">Показать список</span>
-      </a>
+      <button class="view-button" type="button">
+        <img src="#" width="20" height="20" alt="иконка карточек" />
+      </button>
+      <button class="view-button" type="button">
+        <img src="#" width="20" height="20" alt="иконка компьютера" />
+      </button>
+      <button class="view-button view-button-active" type="button">
+        <img src="#" width="20" height="20" alt="иконка списка" />
+      </button>
     </section>
     <section class="cards">
       <ul class="cards-list">
@@ -159,16 +161,18 @@
           <p class="product-card-subtitle">Гостиница</p>
           <p class="product-card-subtitle">От 4000 ₽</p>
           <a class="detailed-button" href="#">Подробнее</a>
-          <a class="to-favorites" href="#">В избранное</a>
-          <a class="rating" href="#">Рейтинг: 8,5</a>
+          <button class="to-favorites" type="button" aria-label="В избранное">В избранное</button>
+          <img src="#" width="91" height="17" alt="картинка со звездным рейтингом" />
+          <p class="rating">Рейтинг: 8,5</p>
         </li>
         <li>
           <img class="product-card-image" src="#" width="180" height="120" alt="фотография природы рядом с гостиницей">
           <h2 class="product-card-title">Desert Quail Inn</h2>
           <p class="product-card-subtitle">Мотель</p>
-          <p class="product-card-subtitle">От 4000 ₽</p>
+          <p class="product-card-subtitle">От 3000 ₽</p>
           <a class="detailed-button" href="#">Подробнее</a>
-          <a class="rating" href="#">Рейтинг: 8,9</a>
+          <img src="#" width="68" height="17" alt="картинка со звездным рейтингом" />
+          <p class="rating">Рейтинг: 8,9</p>
         </li>
         <li>
           <img class="product-card-image" src="#" width="180" height="120" alt="фотография природы рядом с гостиницей">
@@ -176,8 +180,9 @@
           <p class="product-card-subtitle">Апартаменты</p>
           <p class="product-card-subtitle">От 2000 ₽</p>
           <a class="detailed-button" href="#">Подробнее</a>
-          <a class="in-favorites" href="#">В избранном</a>
-          <a class="rating" href="#">Рейтинг: 9,2</a>
+          <button class="in-favorites" type="button" aria-label="В избранном">В избранном</button>
+          <img src="#" width="43" height="17" alt="картинка со звездным рейтингом" />
+          <p class="rating">Рейтинг: 9,2</p>
         </li>
         <li>
           <img class="product-card-image" src="#" width="180" height="120" alt="фотография природы рядом с гостиницей">
@@ -185,33 +190,35 @@
           <p class="product-card-subtitle">Гостиница</p>
           <p class="product-card-subtitle">От 3000 ₽</p>
           <a class="detailed-button" href="#">Подробнее</a>
-          <a class="to-favorites" href="#">В избранное</a>
+          <button class="to-favorites" type="button" aria-label="В избранное">В избранное</button>
+          <img src="#" width="43" height="17" alt="картинка со звездным рейтингом" />
           <a class="rating" href="#">Рейтинг: 9,2</a>
         </li>
       </ul>
       <button class="cards-button" type="button">Загрузить еще</button>
     </section>
-    <section>
-      <ul class="pagination">
-        <li class="pagination-item">
-          <a class="pagination-link pagination-current">1</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">2</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">3</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">4</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">...</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">10</a>
-        </li>
-      </ul>
+    <footer class="footer-pagination">
+        <h3 class="visually-hidden">Пагинация</h3>
+        <ul class="pagination">
+          <li class="pagination-item">
+            <a class="pagination-link pagination-current">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">4</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">...</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">10</a>
+          </li>
+        </ul>
         <p>Гостиниц на странице:</p>
         <select name="hotel-page">
           <option value="4">4</option>
@@ -219,39 +226,37 @@
           <option value="8">8</option>
           <option value="10">10</option>
         </select>
-      </section>
-    <div>
-      <article class="subscription-inner">
-        <h2 class="subscription-head-inner">подпишитесь на рассылку</h2>
-        <p class="spam-free-subscription-inner">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
-        <form class="form-subscription" action="#" method="get">
-          <input type="email" name="yourmail" placeholder="Ваш e-mail" required>
-          <input type="submit" value="подписаться">
-        </form>
-      </article>
-    </div>
+    </footer>
   </main>
+  <article class="subscription-inner">
+    <h2 class="subscription-head-inner">подпишитесь на рассылку</h2>
+    <p class="spam-free-subscription-inner">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
+    <form class="form-subscription" action="#" method="get">
+      <input type="email" name="yourmail" placeholder="Ваш e-mail" required>
+      <input type="submit" value="подписаться">
+    </form>
+  </article>
   <footer class="main-footer">
     <div class="index-footer">
       <ul class="socials-list">
         <li>
-          <a href="https://www.twitter.com/htmlacademy_ru" aria-label="твиттер">
+          <a href="https://www.twitter.com/htmlacademy_ru" target="_blank" aria-label="твиттер">
             <img src="#" width="18" height="15" alt="Иконка твиттера">
           </a>
         </li>
         <li>
-          <a href="https://www.facebook.com/htmlacademy/" aria-label="фейсбук">
+          <a href="https://www.facebook.com/htmlacademy/" target="_blank" aria-label="фейсбук">
             <img src="#" width="10" height="18" alt="Иконка фейсбука">
           </a>
         </li>
         <li>
-          <a href="https://www.instagram.com/htmlacademy/" aria-label="инстаграмм">
+          <a href="https://www.instagram.com/htmlacademy/" target="_blank" aria-label="инстаграмм">
             <img src="#" width="20" height="16" alt="Иконка инстаграмма">
           </a>
         </li>
       </ul>
-      <a class="phone" href="+7(812)812-12-12">+7(812)812-12-12</a>
-      <a href="https://htmlacademy.ru/" aria-label="htmlacademy">
+      <a class="phone" href="tel:88121234567">+7(812)812-12-12</a>
+      <a href="https://htmlacademy.ru/" target="_blank" aria-label="htmlacademy">
         <img src="#" width="115" height="34" alt="Иконка htmlacademy">
       </a>
     </div>
@@ -285,8 +290,6 @@
     <button class="modal-button-close" type="button" aria-label="Закрыть"><span
         class="visually-hidden">Закрыть</span></button>
   </section>
-  <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a
-      href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
 </body>
 
 </html>
