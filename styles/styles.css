@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: 400;
 
-  src: url(/fonts/ptsans-400.woff2) format(woff2);
+  src: url(../fonts/ptsans-400.woff2) format(woff2);
   font-display: swap;
 }
 
@@ -12,7 +12,7 @@
   font-style: normal;
   font-weight: 700;
 
-  src: url(/fonts/ptsans-700.woff2) format(woff2);
+  src: url(../fonts/ptsans-700.woff2) format(woff2);
   font-display: swap;
 }
 
@@ -23,5 +23,24 @@ body{
   line-height: 21px;
   background-color: #E5E5E5;
   color: #000000;
-  
+
+}
+
+
+
+.description{
+  /* background-image: url(../img/bg-index.jpg);
+  background-repeat: no-repeat; */
+}
+
+.subscription-index{
+background-image: url(../img/bg-index-two.jpg);
+background-repeat: no-repeat;
+}
+
+
+
+.inner-header{
+  background-image: url(../img/bg-catalog.jpg);
+  background-repeat: no-repeat;
 }

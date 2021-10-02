@@ -4,23 +4,25 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body class="page-body">
   <header class="main-header">
-    <nav class="navigation">
+   <nav class="navigation">
       <ul class="navigation-list">
-        <li><a class="navigation-link" href="index.html">Главная</a></li>
-        <li><a class="navigation-link" href="catalog.html">О Седоне</a></li>
-        <li><a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a></li>
+        <li><a class="navigation-link navigation-link-current" href="index.html">Главная</a></li>
+        <li><a class="navigation-link" href="#">О Седоне</a></li>
+        <li><a class="navigation-link" href="catalog.html">Гостиницы</a></li>
       </ul>
       <a class="navigation-logo" href="https://htmlacademy.ru/">
-        <img src="index.html" width="138" height="70" alt="логотип города Седона">
+        <img src="img/logo-sedona.svg" width="138" height="70" alt="логотип города Седона">
       </a>
       <ul class="navigation-list navigation-user">
-        <li><a class="navigation-link" href="#"><img src="/img/swg/search.svg" width="18" height="18" alt="иконка поиска"></a></li>
-        <li><a class="navigation-link" href="#"><img src="/img/swg/heart.svg" width="18" height="17" alt="иконка избранного"></a></li>
+        <li><a class="navigation-link" href="#"><img src="img/icon-search.svg" width="18" height="18"
+              alt="иконка поиска"></a></li>
+        <li><a class="navigation-link" href="#"><img src="img/icon-heart.svg" width="18" height="17"
+              alt="иконка избранного"></a></li>
         <li class="navigation-favorites">12</li>
         <li><a class="header-button" href="#">Хочу сюда!</a></li>
       </ul>
@@ -28,21 +30,21 @@
     <div class="popup">
       <ul class="header-popup-list">
         <li class="header-popup-item">
-          <img class="popap-foto" src="/img/index/png/hotel-2-small.png" width="48" height="48" alt="Фото Седоны">
+          <img class="popap-foto" src="img/hotel-2-small.png" width="48" height="48" alt="Фото Седоны">
           <p class="popap-name-hotel">Deset Quail Inn</p>
           <p>Мотель</p>
-          <button class="popap-basket" type="submit" aria-label="корзина"><img src="/img/swg/basket.svg" width="16" height="16"
+          <button class="popup-basket" type="submit" aria-label="корзина"><img src="../img/basket.svg" width="16" height="16"
               alt="Иконка корзины"></button>
         </li>
-        <li class="header-popap-item">
-          <img class="popap-foto" src="/img/index/png/hotel-3-small.png" width="48" height="48" alt="Фото Седоны">
+        <li class="header-popup-item">
+          <img class="popap-foto" src="img/hotel-3-small.png" width="48" height="48" alt="Фото Седоны">
           <p class="popap-name-hotel">Villas at Poco Diablo</p>
           <p>Мотель</p>
-          <button class="popap-basket" type="submit" aria-label="корзина"><img src="/img/index/swg/basket.svg" width="16" height="16"
+          <button class="popup-basket" type="submit" aria-label="корзина"><img src="../img/basket.svg" width="16" height="16"
               alt="Иконка корзины"></button>
         </li>
       </ul>
-      <a class="popap-button" href="#">Все избранные</a>
+      <a class="popup-button" href="#">Все избранные</a>
     </div>
   </header>
   <main class="main-inner">
@@ -51,9 +53,9 @@
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link"><img src="/img/catalog/svg/home-icon-catalog.svg" width="12" height="12" alt="иконка возвращения на главную"</a>
+            <a class="breadcrumbs-link"><img src="img/home-icon-catalog.svg" width="12" height="12" alt="иконка возвращения на главную"</a>
           </li>
-          <li class="breadcrumbs-item"><img src="/img/catalog/svg/nav-link-catalog.svg" width="5" height="8" alt="иконка выбора подстраницы"></li>
+          <li class="breadcrumbs-item"><img src="img/nav-link-catalog.svg" width="5" height="8" alt="иконка выбора подстраницы"></li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="#">Гостиницы</a>
           </li>
@@ -147,54 +149,54 @@
         <button class="visually-hidden" type="submit">Отсортировать продукты</button>
       </form>
       <button class="view-button" type="button">
-        <img src="/img/catalog/svg/mode-tile.svg" width="20" height="20" alt="иконка карточек" />
+        <img src="img/icon-mode-tile.svg" width="20" height="20" alt="иконка карточек" />
       </button>
       <button class="view-button" type="button">
-        <img src="/img/catalog/svg/mode-slideshow.svg" width="20" height="20" alt="иконка компьютера" />
+        <img src="img/icon-mode-slideshow.svg" width="20" height="20" alt="иконка компьютера" />
       </button>
       <button class="view-button view-button-active" type="button">
-        <img src="/img/catalog/svg/mode-list.svg" width="20" height="20" alt="иконка списка" />
+        <img src="img/icon-mode-list.svg" width="20" height="20" alt="иконка списка" />
       </button>
     </section>
     <section class="cards">
       <ul class="cards-list">
         <li class="cards-item">
-          <img class="product-card-image" src="/img/catalog/jpg/hotel-1.jpg" width="180" height="120" alt="фотография природы рядом с гостиницей">
+          <img class="product-card-image" src="img/hotel-1.jpg" width="180" height="120" alt="фотография природы рядом с гостиницей">
           <h2 class="product-card-title">Amara Resort & Spa</h2>
           <p class="product-card-subtitle">Гостиница</p>
           <p class="product-card-subtitle">От 4000 ₽</p>
           <a class="detailed-button" href="#">Подробнее</a>
           <button class="to-favorites" type="button" aria-label="В избранное">В избранное</button>
-          <img src="/img/catalog/svg/stars-four.svg" width="91" height="17" alt="картинка со звездным рейтингом" />
+          <img src="img/icon-stars-four.svg" width="91" height="17" alt="картинка со звездным рейтингом" />
           <p class="rating">Рейтинг: 8,5</p>
         </li>
         <li>
-          <img class="product-card-image" src="/img/catalog/jpg/hotel-2.jpg" width="180" height="120" alt="фотография природы рядом с гостиницей">
+          <img class="product-card-image" src="img/hotel-2.jpg" width="180" height="120" alt="фотография природы рядом с гостиницей">
           <h2 class="product-card-title">Desert Quail Inn</h2>
           <p class="product-card-subtitle">Мотель</p>
           <p class="product-card-subtitle">От 3000 ₽</p>
           <a class="detailed-button" href="#">Подробнее</a>
-          <img src="/img/catalog/svg/stars-three.svg" width="68" height="17" alt="картинка со звездным рейтингом" />
+          <img src="img/icon-stars-three.svg" width="68" height="17" alt="картинка со звездным рейтингом" />
           <p class="rating">Рейтинг: 8,9</p>
         </li>
         <li>
-          <img class="product-card-image" src="/img/catalog/jpg/hotel-3.jpg" width="180" height="120" alt="фотография природы рядом с гостиницей">
+          <img class="product-card-image" src="../img/hotel-3.jpg" width="180" height="120" alt="фотография природы рядом с гостиницей">
           <h2 class="product-card-title">Villas at Poco Diablo</h2>
           <p class="product-card-subtitle">Апартаменты</p>
           <p class="product-card-subtitle">От 2000 ₽</p>
           <a class="detailed-button" href="#">Подробнее</a>
           <button class="in-favorites" type="button" aria-label="В избранном">В избранном</button>
-          <img src="/img/catalog/svg/stars-two.svg" width="43" height="17" alt="картинка со звездным рейтингом" />
+          <img src="img/icon-stars-two.svg" width="43" height="17" alt="картинка со звездным рейтингом" />
           <p class="rating">Рейтинг: 9,2</p>
         </li>
         <li>
-          <img class="product-card-image" src="/img/catalog/jpg/hotel-4.jpg" width="180" height="120" alt="фотография природы рядом с гостиницей">
+          <img class="product-card-image" src="img/hotel-4.jpg" width="180" height="120" alt="фотография природы рядом с гостиницей">
           <h2 class="product-card-title">GreenTree Inn</h2>
           <p class="product-card-subtitle">Гостиница</p>
           <p class="product-card-subtitle">От 3000 ₽</p>
           <a class="detailed-button" href="#">Подробнее</a>
           <button class="to-favorites" type="button" aria-label="В избранное">В избранное</button>
-          <img src="/img/catalog/svg/stars-two.svg" width="43" height="17" alt="картинка со звездным рейтингом" />
+          <img src="img/icon-stars-two.svg" width="43" height="17" alt="картинка со звездным рейтингом" />
           <a class="rating" href="#">Рейтинг: 9,2</a>
         </li>
       </ul>
@@ -244,23 +246,23 @@
       <ul class="socials-list">
         <li>
           <a href="https://www.twitter.com/htmlacademy_ru" target="_blank" aria-label="твиттер">
-            <img src="/img/index/swg/social-twitter.svg" width="18" height="15" alt="Иконка твиттера">
+            <img src="img/social-twitter.svg" width="18" height="15" alt="Иконка твиттера">
           </a>
         </li>
         <li>
           <a href="https://www.facebook.com/htmlacademy/" target="_blank" aria-label="фейсбук">
-            <img src="/img/index/swg/social-facebook.svg" width="10" height="18" alt="Иконка фейсбука">
+            <img src="img/social-facebook.svg" width="10" height="18" alt="Иконка фейсбука">
           </a>
         </li>
         <li>
           <a href="https://www.instagram.com/htmlacademy/" target="_blank" aria-label="инстаграмм">
-            <img src="/img/index/swg/social-youtube.svg" width="20" height="16" alt="Иконка инстаграмма">
+            <img src="img/social-youtube.svg" width="20" height="16" alt="Иконка инстаграмма">
           </a>
         </li>
       </ul>
       <a class="contacts-phone" href="tel:88121234567">+7(812)812-12-12</a>
       <a href="https://htmlacademy.ru/" target="_blank" aria-label="htmlacademy">
-        <img src="/img/index/swg/logo_htmlacademy.svg" width="115" height="34" alt="Иконка htmlacademy">
+        <img src="img/logo_htmlacademy.svg" width="115" height="34" alt="Иконка htmlacademy">
       </a>
     </div>
   </footer>
