@@ -20,13 +20,13 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  background-color: #e5e5e5;
+  background-color:  #F2F2F2;;
   color: #000000;
 }
 /* Pages */
 
 .main-header {
-  background: #ffffff;
+  background-color: #ffffff;
   color: #000000;
 }
 
@@ -255,7 +255,7 @@ body {
 .find-hotel-title {
   font-family: PT Sans, sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
@@ -266,7 +266,7 @@ body {
 .find-hotel-subtitle {
   font-family: PT Sans, sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -299,7 +299,7 @@ body {
 .subscription-head-index {
   font-family: PT Sans, sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
@@ -310,7 +310,7 @@ body {
 .spam-free-subscription-index {
   font-family: PT Sans, sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -333,7 +333,7 @@ body {
 .contacts-phone {
   font-family: PT Sans, sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 40px;
   line-height: 40px;
   text-align: center;
@@ -351,42 +351,247 @@ body {
   height: 408px; */
 }
 
-.inner-header-title{
-  font-family: PT Sans,sans-serif;
+.inner-header-title {
+  font-family: PT Sans, sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 60px;
   line-height: 78px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.breadcrumbs{
+.breadcrumbs {
   list-style: none;
 }
 
-.breadcrumbs-link{
-font-family: PT Sans, sans-serif;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 21px;
-color: #FFFFFF;
-text-decoration: none;
+.breadcrumbs-link {
+  font-family: PT Sans, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  text-decoration: none;
 }
 
-.catalog-filter-title{
+.catalog-filter-title {
+  font-family: PT Sans, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+.catalog-filter-title {
+  outline: none;
+}
+
+.control-label {
+  font-family: PT Sans, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+}
+
+.button-apply {
+  background-color: #83b3d3;
+  border-radius: 4px;
+  font-family: PT Sans, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.button-reset {
+  font-family: PT Sans, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  color: #ffffff;
+  background-color: Transparent;
+}
+
+.sorting {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.sorting h2 {
+  font-family: PT Sans, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 39px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.cards {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.cards-list {
+  list-style: none;
+}
+
+.product-card-title {
+  font-family: PT Sans, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  color: #000000;
+}
+
+.product-card-subtitle {
+  font-family: PT Sans, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #333333;
+}
+
+.detailed-button {
+  font-family: PT Sans, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #756257;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.to-favorites{
 font-family: PT Sans,sans-serif;
 font-style: normal;
-font-weight: bold;
+font-weight: 700;
+font-size: 16px;
+line-height: 21px;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+background-color: #83B3D3;
+border-radius: 4px;
+}
+
+.in-favorites{
+  font-family: PT Sans,sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 21px;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+background-color: #7DB54F;
+border-radius: 4px;
+}
+
+.rating{
+font-family: PT Sans,sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+text-align: center;
+text-transform: uppercase;
+color: #333333;
+background: #F2F2F2;
+border-radius: 4px;
+}
+
+.footer-pagination{
+  background-color: #ffffff;
+}
+
+.pagination{
+  background-color: #ffffff;
+}
+
+.pagination-link{
+font-family: PT Sans, sans-serif;
+font-style: normal;
+font-weight: 700;
 font-size: 20px;
 line-height: 26px;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
 color: #FFFFFF;
+background-color: #83B3D3;
+border-radius: 4px;
 }
 
-.catalog-filter-title{
-  outline:none;
-
+.pagination-current{
+font-family: PT Sans,sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 26px;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+color: #000000;
+background-color: #F2F2F2;
+border-radius: 4px;
 }
+
+.footer-pagination p{
+font-family: PT Sans,sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 23px;
+color: #333333;
+}
+
+.subscription-inner{
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.subscription-head-inner{
+font-family: PT Sans,sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+text-align: center;
+text-transform: uppercase;
+color: #000000;
+}
+
+.spam-free-subscription-inner{
+font-family: PT Sans,sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 26px;
+text-align: center;
+color: #333333;
+}
+
+.form-subscription{
+  background-color: #ffffff;
+  color: #000000;
+}
+
 /* Form */
 
 .modal h2 {
