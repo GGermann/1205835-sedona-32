@@ -48,12 +48,13 @@
     </div>
   </header>
   <main class="main-inner">
+    <div class="page-container">
     <div class="catalog-inner">
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link"><img src="img/home-icon-catalog.svg" width="12" height="12" alt="иконка возвращения на главную"</a>
+            <a class="breadcrumbs-link"><img src="img/home-icon-catalog.svg" width="12" height="12" alt="иконка возвращения на главную"></a>
           </li>
           <li class="breadcrumbs-item"><img src="img/nav-link-catalog.svg" width="5" height="8" alt="иконка выбора подстраницы"></li>
           <li class="breadcrumbs-item">
@@ -63,7 +64,7 @@
       </header>
       <section class="catalog-parametrs">
         <h2 class="visually-hidden">Подбор жилья по параметрам</h2>
-        <form action="https://htmlacademy.ru/" method="post">
+        <form class="catalog-form" action="https://htmlacademy.ru/" method="post">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Ифраструктура:</legend>
             <ul class="catalog-filter-list">
@@ -90,7 +91,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="catalog-filter-group">
+          <fieldset class="catalog-filter-group catalog-filter-style">
             <legend class="catalog-filter-title">Тип жилья:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
@@ -132,8 +133,10 @@
               <input class="catalog-filter-input" type="number" name="max-price"> до
             </label>
           </fieldset>
+          <div class="button-forms">
           <button class="button-apply" type="submit">Применить</button>
           <button class="button-reset" type="reset">Сбросить</button>
+        </div>
         </form>
       </section>
     </div>
@@ -143,7 +146,7 @@
         <label class="visually-hidden" for="sorting">Сортировка</label>
         <select class="select-control" id="sorting" name="sorting">
           <option value="popular">Сначала дешевые</option>
-          <option value="cheap">Средний диапозон</option>
+          <option value="cheap">Средний диапазон</option>
           <option value="expensive">Сначала дорогое</option>
         </select>
         <button class="visually-hidden" type="submit">Отсортировать продукты</button>
@@ -181,7 +184,7 @@
           <p class="rating">Рейтинг: 8,9</p>
         </li>
         <li>
-          <img class="product-card-image" src="../img/hotel-3.jpg" width="180" height="120" alt="фотография природы рядом с гостиницей">
+          <img class="product-card-image" src="/img/hotel-3.jpg" width="180" height="120" alt="фотография природы рядом с гостиницей">
           <h2 class="product-card-title">Villas at Poco Diablo</h2>
           <p class="product-card-subtitle">Апартаменты</p>
           <p class="product-card-subtitle">От 2000 ₽</p>
@@ -198,7 +201,7 @@
           <a class="detailed-button" href="#">Подробнее</a>
           <button class="to-favorites" type="button" aria-label="В избранное">В избранное</button>
           <img src="img/icon-stars-two.svg" width="43" height="17" alt="картинка со звездным рейтингом" />
-          <p class="rating" href="#">Рейтинг: 9,2</p>
+          <p class="rating">Рейтинг: 9,2</p>
         </li>
       </ul>
       <button class="cards-button" type="button">Загрузить еще</button>
@@ -233,6 +236,7 @@
           <option value="10">10</option>
         </select>
     </footer>
+  </div>
   </main>
   <article class="subscription-inner">
     <h2 class="subscription-head-inner">подпишитесь на рассылку</h2>
