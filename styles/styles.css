@@ -15,16 +15,21 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   background-color: #f2f2f2;
   color: #000000;
-  width: 1280px;
+  width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  min-height: 100%;
 }
 
 /* Pages */
@@ -163,9 +168,15 @@ body {
 }
 
 .description {
+  background-image: url("../img/bg-index.jpg");
+  background-repeat: no-repeat;
   background-color: #000000;
   color: #ffffff;
   width: 1200px;
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
 }
 
 .description h1 {
@@ -176,6 +187,7 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .description p {
@@ -185,13 +197,16 @@ body {
   line-height: 36px;
   text-align: center;
   color: #333333;
+  margin: 0;
 }
 
 .sedona-welcome {
-  position: absolute;
-  top: 116px;
-  left: 371px;
-  z-index: 1;
+  padding-top: 51px;
+  margin: 0 auto;
+}
+
+.divider {
+  padding-top: 21px;
 }
 
 .advantage-block-one {
@@ -547,7 +562,6 @@ body {
 .view-button {
   margin: 0;
   padding: 0;
-
 }
 
 .cards {
@@ -557,10 +571,22 @@ body {
 
 .cards-list {
   list-style: none;
+  margin: 0;
 }
 
-.cards-item{
+.cards-item {
   display: flex;
+}
+
+.product-subtitle {
+  width: 320px;
+}
+
+.product-rating {
+  width: 200px;
+  margin-left: auto;
+  margin-top: auto;
+  text-align: center;
 }
 
 .product-card-title {
@@ -664,6 +690,7 @@ body {
 .subscription-inner {
   background-color: #ffffff;
   color: #000000;
+  width: 1200px;
 }
 
 .subscription-head-inner {
