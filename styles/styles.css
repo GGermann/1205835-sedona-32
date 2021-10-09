@@ -584,7 +584,7 @@ body {
 }
 
 .product-subtitle {
-  width: 320px;
+  width: 480px;
 }
 
 .product-rating {
@@ -618,6 +618,7 @@ body {
   background-color: #756257;
   border-radius: 4px;
   text-decoration: none;
+  padding: 12px 32px 12px 32px;
 }
 
 .to-favorites {
@@ -629,6 +630,7 @@ body {
   color: #ffffff;
   background-color: #83b3d3;
   border-radius: 4px;
+  padding: 12px 31px 12px 31px;
 }
 
 .in-favorites {
@@ -640,6 +642,7 @@ body {
   color: #ffffff;
   background-color: #7db54f;
   border-radius: 4px;
+  padding: 12px 31px 12px 31px;
 }
 
 .rating {
