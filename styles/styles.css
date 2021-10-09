@@ -122,7 +122,10 @@ body {
 }
 
 .popup {
-  display: none;
+  /* display: none; */
+  display: flex;
+  flex-direction: column;
+  width: 400px;
   background-color: #ffffff;
   border: 1px solid #e6e6e6;
   box-sizing: border-box;
@@ -165,6 +168,8 @@ body {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 24px 141px 24px 141px;
+  border-radius: 0px 0px 20px 20px;
 }
 
 .description {
@@ -654,6 +659,7 @@ body {
 
 .pagination {
   background-color: #ffffff;
+  margin: 0;
 }
 
 .pagination-link {
@@ -712,12 +718,38 @@ body {
 
 /* Form */
 
+.modal{
+  width: 715px;
+  background: #FFFFFF;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+}
+
 .modal h2 {
   font-weight: bold;
   font-size: 30px;
   line-height: 40px;
   text-transform: uppercase;
   color: #000000;
+  padding-left: 70px;
+}
+
+.modal-button{
+  margin: 0;
+  background-color: #83B3D3;
+  border-radius: 10px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 23px 257px 23px 257px;
+}
+
+.modal-form {
+  padding-left: 70px;
+  text-align: center;
 }
 
 .form-label {
@@ -739,6 +771,5 @@ body {
   white-space: nowrap;
   overflow: hidden;
   clip: rect(0 0 0 0); /* IE6, IE7 */
-  clip: rect(0 0 0 0);
   clip-path: inset(100%);
 }
