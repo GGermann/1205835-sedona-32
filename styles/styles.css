@@ -1,6 +1,6 @@
 @font-face {
   font-family: "PT Sans";
-  font-style: normal;
+  font-style-list-style-type: normal;
   font-weight: 400;
 
   src: url("../fonts/ptsans-400.woff2") format("woff2");
@@ -9,7 +9,7 @@
 
 @font-face {
   font-family: "PT Sans";
-  font-style: normal;
+  font-style-list-style-type: normal;
   font-weight: 700;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
@@ -64,25 +64,32 @@ body {
 }
 
 .navigation-list {
-  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
   width: 412px;
   margin: 0;
-  padding: 0;
+  padding-left: 54.5px;
   /* outline: 5px solid black;
   outline-offset: -5px; */
 }
 
 .navigation-user {
   max-width: 270px;
-  margin-left: auto;
+  margin-left: 0;
+  padding-left: 0;
+  margin-right: 62px;
 }
 
 .navigation-logo {
   width: 138px;
   margin: 0 auto;
+  position: absolute;
+  margin-left: 531px;
 }
 
 .navigation-link {
+  display: block;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -90,10 +97,20 @@ body {
   background-color: #ffffff;
   text-align: center;
   text-decoration: none;
-  padding-right: 33px;
+  padding: 19px 16.5px 20px 16.5px;
 }
 
+.navigation-user .navigation-link {
+  min-width: 10.5px;
+  min-height: 16.5px;
+  padding: 22px 8px 18px 11px;
+}
+
+
 .navigation-favorites {
+  position: absolute;
+  margin-top: 14px;
+  margin-left: 61px;
   width: 19px;
   min-height: 19px;
   border-radius: 50%;
@@ -102,6 +119,9 @@ body {
 }
 
 .favorites-number {
+  display: block;
+  margin-top: 3px;
+  margin-bottom: 3px;
   font-weight: 400;
   font-size: 10px;
   line-height: 13px;
@@ -109,6 +129,7 @@ body {
 }
 
 .header-button {
+  display: block;
   background-color: #756257;
   border-radius: 4px;
   font-weight: 700;
@@ -118,11 +139,13 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
-  padding: 13px 35px 10px 35px;
+  padding: 9px 34px 8px 34px;
+  margin-top: 13px;
+  margin-left: 26px;
+  /* margin-bottom: 14px; */
 }
 
 .popup {
-  /* display: none; */
   display: flex;
   flex-direction: column;
   width: 400px;
@@ -134,7 +157,7 @@ body {
 }
 
 .header-popup-list {
-  list-style: none;
+  list-style-type: none;
 }
 
 .popup-name-hotel {
@@ -193,6 +216,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   margin: 0;
+  padding-top: 63px;
 }
 
 .description p {
@@ -203,6 +227,8 @@ body {
   text-align: center;
   color: #333333;
   margin: 0;
+  padding-top: 32px;
+  padding-bottom: 79px;
 }
 
 .sedona-welcome {
@@ -211,7 +237,7 @@ body {
 }
 
 .divider {
-  padding-top: 21px;
+  padding-top: 23px;
 }
 
 .advantage-block-one {
@@ -234,6 +260,8 @@ body {
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
+  padding-top: 98px;
+  margin: 0;
 }
 
 .advantages-caption-number {
@@ -242,6 +270,8 @@ body {
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
+  padding-top: 29px;
+  margin: 0;
 }
 
 .advantages-caption-number-next {
@@ -251,6 +281,8 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #333333;
+  margin: 0;
+  padding-bottom: 30px;
 }
 
 .advantages-caption-paragraph {
@@ -258,24 +290,28 @@ body {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  margin: 0;
+  padding-top: 28px;
 }
 
 .advantages-list-one {
   text-align: center;
-  list-style: none;
+  list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .advantages-list-two {
   text-align: center;
-  list-style: none;
+  list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .advantages-title {
@@ -285,6 +321,14 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  margin: 0;
+  padding-top: 18px;
+  padding-bottom: 22px;
+}
+
+.advantages-list-two .advantages-title {
+  padding-top: 98px;
+  padding-bottom: 29px;
 }
 
 .advantages-description {
@@ -293,11 +337,18 @@ body {
   line-height: 21px;
   text-align: center;
   color: #333333;
+  margin: 0;
+  padding-bottom: 88px;
+}
+
+.advantages-list-two .advantages-description {
+  padding-bottom: 107px;
 }
 
 .advantage-sedona-one {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
 }
@@ -305,6 +356,7 @@ body {
 .advantage-sedona-two {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
 }
@@ -324,11 +376,23 @@ body {
   width: 400px;
 }
 
+.icon-home {
+  padding-top: 89px;
+}
+
+.icon-burger {
+  padding-top: 91px;
+}
+
+.icon-present {
+  padding-top: 85px;
+}
+
 .find-hotel {
   text-align: center;
   background-color: #ffffff;
   padding-top: 91px;
-  padding-bottom: 91px;
+  padding-bottom: 101px;
 }
 
 .find-hotel-title {
@@ -348,8 +412,8 @@ body {
   text-align: center;
   color: #333333;
   margin: 0;
-  padding-top: 15px;
-  padding-bottom: 57px;
+  padding-top: 27px;
+  padding-bottom: 74px;
 }
 
 .button-find-hotel {
@@ -362,7 +426,7 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
-  padding: 24px 151px 22px 151px;
+  padding: 20px 151px 16px 151px;
 }
 
 .subscription-index {
@@ -383,6 +447,8 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   margin: 0;
+  padding-top: 92px;
+  padding-bottom: 30px;
 }
 
 .spam-free-subscription-index {
@@ -391,12 +457,14 @@ body {
   line-height: 26px;
   text-align: center;
   color: #ffffff;
+  margin: 0;
+  padding-bottom: 45px;
 }
 
 .form-subscription {
   border-radius: 0 10 10 0;
-  background-color: #ffffff;
   color: #000000;
+  padding-bottom: 137px;
 }
 
 .main-footer {
@@ -417,10 +485,23 @@ body {
 }
 
 .socials-list {
-  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
   width: 130px;
   margin: 0;
-  padding: 0;
+  /* padding: 0; */
+  padding-top: 50px;
+  padding-left: 71px;
+}
+
+.socials-item {
+  margin-right: 30px;
+}
+
+.socials-item:nth-child(3n) {
+  margin-right: 0;
+  margin-bottom: 10px;
 }
 
 .contacts-phone {
@@ -434,6 +515,12 @@ body {
   width: 720px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 37px;
+}
+
+.logo-htmlacademy {
+  padding-top: 43px;
+  padding-right: 73px;
 }
 
 .catalog-inner {
@@ -445,18 +532,27 @@ body {
   height: 408px; */
 }
 
+.inner-header {
+  padding-top: 35px;
+  padding-left: 71px;
+}
+
 .inner-header-title {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
   color: #ffffff;
   margin: 0;
+  margin-bottom: 5px;
 }
 
 .breadcrumbs {
   display: flex;
-  list-style: none;
+  list-style-type: none;
   width: 130px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 45px;
 }
 
 .breadcrumbs-item {
@@ -473,6 +569,7 @@ body {
   line-height: 21px;
   color: #ffffff;
   text-decoration: none;
+  /* margin-right: 26px; */
 }
 
 .catalog-form {
@@ -486,14 +583,14 @@ body {
   border: none;
 }
 
-.catalog-filter-style {
+.catalog-filter-style-list-style-type {
   margin-right: auto;
 }
 
 .catalog-filter-item {
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
 }
 
 .catalog-filter-list {
@@ -532,9 +629,10 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  padding: 0;
+  padding: 17px 35px 19px 35px;
   margin: 0;
   border: none;
+  margin-bottom: 20px;
 }
 
 .button-reset {
@@ -551,8 +649,10 @@ body {
 
 .sorting {
   display: flex;
+  flex-wrap: wrap;
   background-color: #ffffff;
   color: #000000;
+  padding: 44px 72px 42px 72px;
 }
 
 .sorting h2 {
@@ -561,21 +661,34 @@ body {
   line-height: 39px;
   text-transform: uppercase;
   color: #000000;
-  margin-right: auto;
+  margin: 0;
+  padding: 0;
 }
+
+.sorting-type {
+  margin-left: auto;
+  margin-right: 81px;
+}
+
 
 .view-button {
   margin: 0;
-  padding: 0;
+  width: 48px;
+  height: 48px;
+}
+
+.view-button:not(:last-child) {
+  margin-right: 8px;
 }
 
 .cards {
   background-color: #ffffff;
   color: #000000;
+  text-align: center;
 }
 
 .cards-list {
-  list-style: none;
+  list-style-type: none;
   margin: 0;
 }
 
@@ -656,16 +769,41 @@ body {
   border-radius: 4px;
 }
 
+.cards-button {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #83B3D3;
+  border-radius: 4px;
+  padding: 19px 241px;
+  margin-top: 61px;
+  margin-bottom: 61px;
+}
+
 .footer-pagination {
   background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 31px 72px 89px 72px;
 }
 
 .pagination {
   background-color: #ffffff;
   margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
 }
 
 .pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 55px;
+  height: 55px;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -675,6 +813,12 @@ body {
   color: #ffffff;
   background-color: #83b3d3;
   border-radius: 4px;
+  text-decoration: none;
+  padding-top: 17px;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .pagination-current {
@@ -694,12 +838,15 @@ body {
   font-size: 18px;
   line-height: 23px;
   color: #333333;
+  margin-left: auto;
+  margin-right: 51px;
 }
 
 .subscription-inner {
   background-color: #ffffff;
   color: #000000;
   width: 1200px;
+  text-align: center;
 }
 
 .subscription-head-inner {
@@ -709,6 +856,8 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  margin: 0;
+  padding-bottom: 15px;
 }
 
 .spam-free-subscription-inner {
@@ -717,6 +866,8 @@ body {
   line-height: 26px;
   text-align: center;
   color: #333333;
+  margin: 0;
+  padding-bottom: 52px;
 }
 
 /* Form */
