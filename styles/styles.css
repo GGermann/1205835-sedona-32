@@ -487,15 +487,18 @@ body {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-  width: 130px;
+  width: 170px;
   margin: 0;
-  /* padding: 0; */
   padding-top: 50px;
-  padding-left: 71px;
+  padding-left: 55px;
 }
 
 .socials-item {
-  margin-right: 30px;
+  margin-bottom: 10px;
+}
+
+.socials-link {
+  padding: 15px 15px;
 }
 
 .socials-item:nth-child(3n) {
