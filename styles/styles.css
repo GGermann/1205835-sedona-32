@@ -1,15 +1,14 @@
 @font-face {
   font-family: "PT Sans";
-  font-style-list-style-type: normal;
+  font-style: normal;
   font-weight: 400;
-
   src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
 @font-face {
   font-family: "PT Sans";
-  font-style-list-style-type: normal;
+  font-style: normal;
   font-weight: 700;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
@@ -152,7 +151,7 @@ body {
   background-color: #ffffff;
   border: 1px solid #e6e6e6;
   box-sizing: border-box;
-  box-shadow: 0 25 50 rgba (0, 0, 0, 0.15);
+  box-shadow: 0 25 50 rgba(0, 0, 0, 0.15);
   border-radius: 20px;
 }
 
