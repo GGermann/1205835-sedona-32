@@ -47,6 +47,7 @@ body {
   width: 1200px;
   background-color: #ffffff;
   color: #000000;
+  position: relative;
 }
 
 .navigation {
@@ -84,7 +85,7 @@ body {
   width: 138px;
   margin: 0 auto;
   position: absolute;
-  margin-left: 531px;
+  left:calc(50% - 138px/2);
 }
 
 .navigation-link {
@@ -151,7 +152,7 @@ body {
   background-color: #ffffff;
   border: 1px solid #e6e6e6;
   box-sizing: border-box;
-  box-shadow: 0 25 50 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
 }
 
@@ -243,14 +244,16 @@ body {
   background-color: #83b3d3;
   text-align: center;
   color: #ffffff;
-  width: 400px;
+  padding: 98px 90px 50px 111px;
+  box-sizing: border-box;
 }
 
 .advantage-block-two {
   background-color: #83b3d3;
   text-align: center;
   color: #ffffff;
-  width: 400px;
+  padding: 98px 90px 50px 90px;
+  box-sizing: border-box;
 }
 
 .advantages-caption {
@@ -259,8 +262,8 @@ body {
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 98px;
   margin: 0;
+  margin-bottom: 29px;
 }
 
 .advantages-caption-number {
@@ -269,8 +272,8 @@ body {
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 29px;
   margin: 0;
+  margin-bottom: 27px;
 }
 
 .advantages-caption-number-next {
@@ -281,7 +284,7 @@ body {
   text-transform: uppercase;
   color: #333333;
   margin: 0;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .advantages-caption-paragraph {
@@ -290,7 +293,7 @@ body {
   line-height: 21px;
   text-align: center;
   margin: 0;
-  padding-top: 28px;
+  margin-bottom: 37px;
 }
 
 .advantages-list-one {
@@ -321,13 +324,7 @@ body {
   text-transform: uppercase;
   color: #000000;
   margin: 0;
-  padding-top: 18px;
-  padding-bottom: 22px;
-}
-
-.advantages-list-two .advantages-title {
-  padding-top: 98px;
-  padding-bottom: 29px;
+  margin-bottom: 20px;
 }
 
 .advantages-description {
@@ -337,17 +334,19 @@ body {
   text-align: center;
   color: #333333;
   margin: 0;
-  padding-bottom: 88px;
+  margin-bottom: 28px;
 }
 
 .advantages-list-two .advantages-description {
-  padding-bottom: 107px;
+  /* padding-bottom: 107px; */
 }
 
 .advantage-sedona-one {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
+  background-color: #83b3d3;
   padding: 0;
   margin: 0;
 }
@@ -356,6 +355,8 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
+  background-color: #83b3d3;
   padding: 0;
   margin: 0;
 }
@@ -363,28 +364,38 @@ body {
 .advantages-item-one {
   background: rgba(131, 179, 211, 0.12);
   width: 400px;
+  padding-top: 89px;
+  padding-bottom: 55px;
+  align-items: center;
 }
 
 .advantages-item-two {
   background: #ffffff;
   width: 400px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 89px;
+  padding-bottom: 55px;
+  align-items: center;
 }
 
 .advantages-item-three {
   background: rgba(131, 179, 211, 0.2);
   width: 400px;
+  padding-top: 89px;
+  padding-bottom: 55px;
 }
 
 .icon-home {
-  padding-top: 89px;
+  margin-bottom: 24px;
 }
 
 .icon-burger {
-  padding-top: 91px;
+  margin-bottom: 24px;
 }
 
 .icon-present {
-  padding-top: 85px;
+  margin-bottom: 24px;
 }
 
 .find-hotel {
@@ -402,6 +413,7 @@ body {
   text-transform: uppercase;
   color: #000000;
   margin: 0;
+  margin-bottom: 27px;
 }
 
 .find-hotel-subtitle {
@@ -411,8 +423,7 @@ body {
   text-align: center;
   color: #333333;
   margin: 0;
-  padding-top: 27px;
-  padding-bottom: 74px;
+  margin-bottom: 74px;
 }
 
 .button-find-hotel {
@@ -426,11 +437,13 @@ body {
   color: #ffffff;
   text-decoration: none;
   padding: 20px 151px 16px 151px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .subscription-index {
   background-image: url("../img/bg-index-two.jpg");
-  background-color: #000000;
+  background-color: #83b3d3;
   background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: center;
@@ -463,17 +476,17 @@ body {
 .form-subscription {
   border-radius: 0 10 10 0;
   color: #000000;
-  padding-bottom: 137px;
 }
 
 .main-footer {
   background-color: #ffffff;
-  width: 1200px;
-  height: 120px;
+  /* width: 1200px; */
+  padding: 40px 72px 40px 72px;
 }
 
 .index-footer {
   display: flex;
+  flex-wrap: wrap;
   width: 1200px;
   margin: 0 auto;
   /* display: flex;
@@ -489,8 +502,7 @@ body {
   list-style-type: none;
   width: 170px;
   margin: 0;
-  padding-top: 50px;
-  padding-left: 55px;
+  padding: 0;
 }
 
 .socials-item {
@@ -515,14 +527,11 @@ body {
   color: #000000;
   text-decoration: none;
   width: 720px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 37px;
 }
 
 .logo-htmlacademy {
-  padding-top: 43px;
-  padding-right: 73px;
+  /* padding-top: 43px;
+  padding-right: 73px; */
 }
 
 .catalog-inner {
@@ -532,11 +541,12 @@ body {
   background-repeat: no-repeat;
   /* width: 1200px;
   height: 408px; */
+  padding: 35px 72px 70px 72px;
 }
 
 .inner-header {
-  padding-top: 35px;
-  padding-left: 71px;
+  /* width: 1200px;
+  height: 408px; */
 }
 
 .inner-header-title {
@@ -686,27 +696,44 @@ body {
 .cards {
   background-color: #ffffff;
   color: #000000;
-  text-align: center;
 }
 
 .cards-list {
   list-style-type: none;
-  margin: 0;
+  margin: 0 auto;
+  padding: 0;
+  width: 1056px;
 }
 
 .cards-item {
   display: flex;
+  padding-top: 31px;
+  padding-bottom: 31px;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+.cards-item:first-child{
+  border-top: 1px solid #E6E6E6;
+}
+
+.product-card-image{
+  /* margin: 20px; */
 }
 
 .product-subtitle {
   width: 480px;
+  padding-left: 36px;
 }
 
 .product-rating {
   width: 200px;
   margin-left: auto;
-  margin-top: auto;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .product-card-title {
@@ -714,6 +741,17 @@ body {
   font-size: 24px;
   line-height: 31px;
   color: #000000;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5px;
+}
+
+.product-cards-subtitle{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 235px;
+  margin-bottom: 17px;
 }
 
 .product-card-subtitle {
@@ -721,6 +759,8 @@ body {
   font-size: 18px;
   line-height: 23px;
   color: #333333;
+  margin: 0;
+  padding: 0;
 }
 
 .detailed-button {
@@ -767,8 +807,17 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #333333;
-  background: #f2f2f2;
+  background-color: #f2f2f2;
   border-radius: 4px;
+  padding: 13px 35px 13px 35px;
+  border-radius: 4px;
+  margin: 0;
+}
+
+.card-button{
+width: 1056px;
+margin: 0 auto;
+border-bottom: 1px solid #E6E6E6;
 }
 
 .cards-button {
@@ -849,6 +898,7 @@ body {
   color: #000000;
   width: 1200px;
   text-align: center;
+  padding-bottom: 137px;
 }
 
 .subscription-head-inner {
@@ -859,7 +909,7 @@ body {
   text-transform: uppercase;
   color: #000000;
   margin: 0;
-  padding-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .spam-free-subscription-inner {
@@ -869,7 +919,7 @@ body {
   text-align: center;
   color: #333333;
   margin: 0;
-  padding-bottom: 52px;
+  margin-bottom: 52px;
 }
 
 /* Form */
