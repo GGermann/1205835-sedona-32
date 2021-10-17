@@ -181,7 +181,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   padding: 24px 141px 24px 141px;
-  border-radius: 0px 0px 20px 20px;
+  border-radius: 0 0 20px 20px;
 }
 
 .description {
