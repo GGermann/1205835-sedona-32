@@ -236,9 +236,8 @@ body {
 
 .header-button:active {
   background-color: #615048;
-  color: #756257;
+  color:#ffffff4d;
   border: 3px solid transparent;
-  height: 55px;
 }
 
 .popup {
@@ -292,16 +291,23 @@ body {
 }
 
 .description {
-  background-image: url("../img/bg-index.jpg");
-  background-repeat: no-repeat;
+  background-image: url("../img/divider.svg"), url("../img/bg-index.jpg");
+  background-repeat: no-repeat, no-repeat;
   background-color: #000000;
   color: #ffffff;
   width: 1200px;
   display: flex;
   flex-direction: column;
+  background-position-y: bottom, top;
 }
 
-.description h1 {
+.sedona-welcome {
+  padding-top: 51px;
+  margin: 0 auto;
+  margin-bottom: 83px;
+}
+
+.caption-sedona {
   background: #ffffff;
   color: #000000;
   font-weight: 700;
@@ -313,7 +319,7 @@ body {
   padding-top: 63px;
 }
 
-.description p {
+.reasons-to-come {
   background: #ffffff;
   font-weight: 400;
   font-size: 22px;
@@ -323,17 +329,6 @@ body {
   margin: 0;
   padding-top: 32px;
   padding-bottom: 79px;
-}
-
-.sedona-welcome {
-  padding-top: 51px;
-  margin: 0 auto;
-}
-
-.divider{
- background-image: url("../img/divider.svg");
- height: 57px;
- margin-top: 25px;
 }
 
 .advantage-block-one {
@@ -395,7 +390,6 @@ margin-top: 10px;
 background-color: #ffffff;
 }
 
-
 .advantage-block-two .advantages-caption-number::after {
   content: "";
   position: absolute;
@@ -407,18 +401,16 @@ background-color: #ffffff;
   background-color: #ffffff;
   }
 
-  .advantage-block-two .advantages-caption-number::before {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 2px;
-    left: 75px;
-    top: "#";
-    margin-top: 10px;
-    background-color: #ffffff;
-    }
-
-
+.advantage-block-two .advantages-caption-number::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  left: 75px;
+  top: "#";
+  margin-top: 10px;
+  background-color: #ffffff;
+}
 
 .advantages-caption-number-next {
   position: relative;
@@ -540,6 +532,36 @@ background-color: #ffffff;
   align-items: center;
 }
 
+.advantages-item-icon-one:before{
+  content:"";
+  display: block;
+  background-image: url("../img/icon-home.svg");
+  margin-bottom: 22px;
+  background-position: center;
+  height: 75px;
+  background-repeat: no-repeat;
+}
+
+.advantages-item-icon-two:before {
+  content:"";
+  display: block;
+  background-image: url("../img/icon-burger.svg");
+  margin-bottom: 27px;
+  background-position: center;
+  height: 70px;
+  background-repeat: no-repeat;
+}
+
+.advantages-item-icon-three:before {
+  content:"";
+  display: block;
+  background-image: url("../img/icon-present.svg");
+  margin-bottom: 22px;
+  background-position: center;
+  height: 76px;
+  background-repeat: no-repeat;
+}
+
 .advantages-item-one {
   padding-top: 95px;
   padding-bottom: 35px;
@@ -561,7 +583,7 @@ background-color: #ffffff;
   align-items: center;
 }
 
-.icon-home{
+/* .icon-home{
   background-image: url("../img/icon-home.svg");
   margin-bottom: 22px;
   background-position: center;
@@ -583,7 +605,7 @@ background-color: #ffffff;
   background-position: center;
   height: 76px;
   background-repeat: no-repeat;
-}
+} */
 
 .find-hotel {
   text-align: center;
@@ -640,7 +662,7 @@ background-color: #ffffff;
 }
 
 .button-find-hotel:active {
-  color: #756257;
+  color: #ffffff4d;
   border: 3px solid transparent;
 }
 
@@ -726,13 +748,20 @@ background-color: #ffffff;
 }
 
 .form-yourmail:focus {
-  border: 3px solid #83B3D3;
+  background-color: #E6E6E6;
+  box-shadow: inset 0px 0px 1px 3px #83b3d3;
   outline:none;
 }
+
 .form-yourmail:active {
-  border: 3px solid #000000;
+  box-shadow: inset 0px 0px 1px 2px #000000;
   color: #000000;
+  background-color: #ffffff;
 }
+
+/* .form-yourmail:invalid {
+  box-shadow: inset 0px 0px 1px 2px #FF5757
+} */
 
 .subscribe-button {
   font-style: normal;
@@ -763,12 +792,12 @@ background-color: #ffffff;
 .subscribe-button:active {
   background-color: #68A2CA;
   border: 3px solid transparent;
-  color: #FFFFFF;
+  color: #ffffff4d;
 }
 
 .main-footer {
   background-color: #ffffff;
-  padding: 38px 75px 40px 60px;
+  padding: 28px 60px 40px 60px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -785,12 +814,12 @@ background-color: #ffffff;
 }
 
 .socials-item {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   margin-right: 5px;
 }
 
 .socials-item:nth-child(3n) {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   margin-right: 5px;
 }
 
@@ -830,6 +859,14 @@ background-color: #ffffff;
   opacity: 0.3;
 }
 
+.container-contacts-phone{
+  width: 720px;
+  padding-left: 180px;
+  padding-right: 30px;
+  border: 3px solid transparent;
+  box-sizing: border-box;
+}
+
 .contacts-phone {
   font-weight: 400;
   font-size: 40px;
@@ -838,28 +875,29 @@ background-color: #ffffff;
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
-  width: 720px;
-  padding-left: 20px;
-  padding-right: 30px;
   border: 3px solid transparent;
-  box-sizing: border-box;
   border-radius: 10px;
+  padding: 8px 15px 8px 15px;
+  box-sizing: border-box;
 }
 
 .contacts-phone:focus {
   border: 3px solid #83B3D3;
-  box-sizing: border-box;
+  padding: 8px 15px 8px 15px;
   border-radius: 10px;
   width: 370px;
-  height: 70px;
   outline:none;
+  box-sizing: border-box;
 }
 
 .contacts-phone:hover {
+  padding: 8px 15px 8px 15px;
   color: #756257;
+  box-sizing: border-box;
 }
 
 .contacts-phone:active {
+  padding: 8px 15px 8px 15px;
   color: #756257;
   opacity: 0.3;
   border: none;
@@ -868,23 +906,31 @@ background-color: #ffffff;
   border-radius: 10px;
 }
 
+.logo-htmlacademy {
+  border: 3px solid transparent;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 10px;
+}
 
-/* .logo-htmlacademy {
-  background-image: url("../img/logo_htmlacademy.svg");
-  background-repeat: no-repeat;
-} */
+.logo-htmlacademy:hover {
+  border: 3px solid transparent;
+  border-radius: 10px;
+  fill: #756257;
+  padding: 10px;
+  box-sizing: border-box;
 
-.logo-htmlacademy:hover{
-  background-image: url("../img/logo_htmlacademy-hover.svg");
-  background-repeat: no-repeat;
 }
 
 .logo-htmlacademy:focus {
   border: 3px solid #83B3D3;
-  box-sizing: border-box;
+  padding: 10px;
   border-radius: 10px;
-  outline: none;
+  outline:none;
+  box-sizing: border-box;
+
 }
+
 .logo-htmlacademy:active{
   opacity: 0.3;
 }
