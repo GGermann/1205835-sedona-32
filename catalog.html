@@ -297,7 +297,7 @@
     <p class="spam-free-subscription spam-free-subscription-inner">Только полезная информация и никакого спама, <br>
       честное бойскаутское!</p>
     <form class="form-subscription" action="#" method="post">
-      <input class="form-yourmail" type="email" name="yourmail" placeholder="Ваш e-mail" required>
+      <input class="form-yourmail error" type="email" name="yourmail" placeholder="Ваш e-mail" required>
       <input class="subscribe-button" type="submit" value="подписаться">
     </form>
   </article>
@@ -330,28 +330,47 @@
     </a>
   </footer>
   <section class="modal">
-    <h2>Поиск гостиницы в Седоне</h2>
-    <form class="modal-form" action="https://htmlacademy.ru/" method="get">
-      <p class="field-group form-arrival-date">
+    <form class="modal-form" action="https://htmlacademy.ru/" method="get"></form>
+    <fieldset class="modal-form-container">
+      <div class="name-modal-form">
+      <h2>Поиск гостиницы в Седоне</h2>
+      <button class="modal-form-close" type="button">
+        <svg class="modal-form-close-button" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg"><path d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z"/></svg>
+      </button>
+      </div>
+      <span class="field-group form-arrival-date">
         <label class="form-label" for="arrival-date">Дата заезда:</label>
-        <input type="text" id="arrival-date" name="arrival-date" placeholder="27 апреля 2020">
-      </p>
-      <p class="field-group form-date-of-departure">
+        <input class="field field-one" type="text" id="arrival-date" name="arrival-date" placeholder="27 апреля 2020">
+        <p class="field-hint">Мы не можем отправить вас в прошлое.</p>
+      </span>
+      <span class="field-group form-date-of-departure">
         <label class="form-label" for="date-of-departure">Дата выезда:</label>
-        <input type="text" id="date-of-departure" name="date-of-departure" placeholder="1 сентября 2021">
-      </p>
-      <p class="field-group form-adults">
-        <label class="form-label" for="adults">Взрослые:</label>
-        <input type="number" id="adults" name="guests" min="1" max="16">
-      </p>
-      <p class="field-group form-children">
-        <label class="form-label" for="children">Дети:</label>
-        <button class="info" type="button">
-          <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+        <input class="field field-one" type="text" id="date-of-departure" name="date-of-departure" placeholder="1 сентября 2021">
+        <p class="field-hint field-hint-paragraph">На эти даты есть свободные номера. Пока есть.</p>
+      </span>
+      <span class="form-adults">
+        <label class="form-label form-label-adults" for="adults">Взрослые:</label>
+        <input class="field field-adults" type="number" id="adults" name="guests" min="1" max="16"  placeholder="2">
+        <button class="button-minus-adults" type="button">
+        <svg class="button-minus-plus" width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="M0 0v1h13V0H0Z"/></svg>
         </button>
-        <input type="number" id="children" name="children-guests" min="1" max="16">
-      </p>
+        <button class="button-plus-adults" type="button">
+        <svg class="button-minus-plus" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/></svg>
+        </button>
+        <label class="form-label form-label-children" for="children">Дети:</label>
+        <button class="info" type="button">
+        <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+        </button>
+        <input class="field field-children" type="number" id="children" name="children-guests" min="1" max="16" placeholder="1">
+        <button class="button-minus-children" type="button">
+        <svg class="button-minus-plus" width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="M0 0v1h13V0H0Z"/></svg>
+        </button>
+        <button class="button-plus-children" type="button">
+        <svg class="button-minus-plus" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/></svg>
+        </button>
+      </span>
       <button class="modal-button" type="submit">Найти</button>
+    </fieldset>
     </form>
     <button class="modal-button-close" type="button" aria-label="Закрыть"><span
         class="visually-hidden">Закрыть</span></button>

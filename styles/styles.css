@@ -787,6 +787,8 @@ background-color: #ffffff;
 }
 
 .form-yourmail {
+  padding-left: 25px;
+  padding-right: 25px;
   font-size: 18px;
   line-height: 26px;
   align-items: center;
@@ -813,7 +815,7 @@ background-color: #ffffff;
   background-color: #ffffff;
 }
 
-.form-yourmail:invalid {
+.error {
   box-shadow: inset 0px 0px 1px 2px #FF5757
 }
 
@@ -1773,73 +1775,209 @@ padding-top: 5px;
   border-radius: 30px;
 }
 
+.modal-form-container{
+  padding: 62px 70px 70px 70px;
+  border: none;
+}
+
 .modal h2 {
   font-weight: bold;
   font-size: 30px;
   line-height: 40px;
   text-transform: uppercase;
   color: #000000;
-  padding-left: 70px;
+  margin: 0;
+}
+
+.name-modal-form{
+  display: flex;
+  align-items: center;
+  margin-bottom: 54px;
+}
+
+.modal-form-close{
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
+  background-color:#F2F2F2;
+  border: none;
+  cursor: pointer;
+  align-self: center;
+  margin-left: auto;
+}
+
+.modal-form-close-button{
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 
 .modal-button {
+  font-family: "PT Sans";
   margin: 0;
   background-color: #83B3D3;
   border-radius: 10px;
   color: #ffffff;
   font-weight: 700;
   font-size: 20px;
-  line-height: 40px;
+  line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  padding: 23px 257px 23px 257px;
+  padding: 22px 256px 24px 256px;
+  border: none;
 }
 
 .modal-form {
   padding-left: 70px;
   text-align: center;
-  display: grid;
-  grid-template-columns: 155px 133px 153px 133px;
+  /* display: grid;
+  grid-template-columns: 155px 133px 153px 133px; */
 }
 
+
+
+.form-arrival-date {
+
+}
+
+.form-date-of-departure {
+
+}
+
+.form-children {
+  position: relative;
+
+}
+
+.modal-button {
+
+}
+
+.field-group {
+  display: grid;
+  grid-template-columns: 155px 420px;
+  flex: wrap;
+  margin: 0;
+  /* justify-self: start; */
+}
 .form-label {
+  grid-column: 1 / 2;
   font-weight: bold;
   font-size: 18px;
   line-height: 40px;
   align-items: center;
   color: #000000;
+  text-align: start;
+  width: 155px;
 }
 
-.form-arrival-date {
-grid-column: 1 / -1;
+.button-minus-adults{
+
 }
 
-.form-date-of-departure {
-  grid-column: 1 / -1;
+.button-plus-adults{
+
 }
 
-.form-adults {
-  grid-column: 1 / 3;
+.button-minus-children{
+
 }
 
-.form-children {
-  grid-column: 3 / 5;
+.button-plus-children{
+
 }
 
-.modal-button {
-  grid-column: 1 / -1;
-}
-
-.field-group {
+.field {
+  grid-column: 2 / 3;
   margin: 0;
-  justify-self: start;
+  padding: 8px 14px;
+  font: inherit;
+  font-weight: 700;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+  border: none;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-size: 18px;
+  line-height: 40px;
+  color: #000000;
+  /* border: 2px solid #242424; */
+}
+.field-hint{
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  margin: 0;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 29px;
+  color: #FF5757;
 }
 
-/*
-.field-group label,
+.field-hint-paragraph{
+font-family: PT Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 29px;
+color: #333333;
+}
+
+.form-adults{
+  display: grid;
+  grid-template-columns: 155px 133px 153px 133px;
+  margin-bottom: 40px;
+}
+
+.form-label-adults {
+  grid-column: 1 / 2;
+}
+
+.field-adults {
+  grid-column: 2 / 3;
+  text-align: center;
+}
+
+.form-label-children {
+  padding-left: 56px;
+  grid-column: 3 / 4;
+}
+
+.field-children {
+  grid-column: 4 / 5;
+  text-align: center;
+}
+
+.field::placeholder
+{color: #000000;
+}
+
+.info {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  margin-top: 9px;
+  margin-left: 410px;
+  padding: 0;
+  background-color: #83B3D3;
+  border-radius: 50%;
+  border: none;
+  background-image: url("../img/info.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
 .field-group input {
   align-items: stretch;
-} */
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
 
 .visually-hidden {
   position: absolute;
