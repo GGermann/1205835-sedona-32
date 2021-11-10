@@ -253,13 +253,13 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-55%,11%);
+  transform: translate(-52%,13%);
 }
 
 .popup-wrapper {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  /* width: 400px; */
   background-color: #ffffff;
   box-sizing: border-box;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
@@ -270,7 +270,7 @@ body {
 .popup-wrapper::before {
   position: absolute;
   top: -9px;
-  left: 200px;
+  left: 187px;
   width: 20px;
   height: 9px;
   content: "";
@@ -281,12 +281,10 @@ body {
 .header-popup-list {
   list-style-type: none;
   display: grid;
-  width: 400px;
+  /* width: 400px; */
   padding: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 24px;
+  margin-bottom: 2px;
 }
 
 .header-popup-item{
@@ -299,8 +297,8 @@ body {
   grid-template-rows: 21px;
   column-gap: 17px;
   box-sizing: border-box;
-  margin-left: 25px;
-  margin-bottom: 15px;
+  margin-left: 23px;
+  margin-bottom: 25px;
 }
 
 .popup-foto {
@@ -329,7 +327,7 @@ body {
 .popup-name-hotel {
   font-weight: 700;
   font-size: 18px;
-  line-height: 40px;
+  line-height: 30px;
   align-items: center;
   color: #000000;
 }
@@ -337,7 +335,7 @@ body {
 .popup-accommodation-facility {
   font-weight: 400;
   font-size: 16px;
-  line-height: 40px;
+  line-height: 27px;
   align-items: center;
   color: #333333;
 }
@@ -349,8 +347,7 @@ body {
   height: 36px;
   border: none;
   background-color: inherit;
-  margin-right: 25px;
-  margin-top: 1px;
+  margin-right: 18px;
   box-sizing: border-box;
   position: relative;
 }
@@ -365,7 +362,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 24px 131px 24px 131px;
+  padding: 20px 131px 20px 131px;
   border-radius: 0px 0px 20px 20px;
 }
 
@@ -1258,6 +1255,7 @@ background-color: #ffffff;
   border-radius: 4px 0px 0px 4px;
   padding-right: 12px;
   color: #ffffff4d;
+  outline: none;
 }
 
 .filter-label-min:hover{
@@ -1282,6 +1280,22 @@ background-color: #ffffff;
   padding-right: 12px;
   color: #ffffff4d;
   border-style: solid solid solid none;
+  outline: none;
+}
+
+.filter-label-max:hover{
+  border: 2px solid #ffffff99;
+}
+
+.filter-label-max:focus{
+  box-sizing: border-box;
+  box-shadow: 0px 0px 0px 3px #81B3D2,
+  inset 0px 0px 0px 3px #81b3d2;
+}
+
+.filter-label-max:active{
+  border: 2px solid #FFFFFF;
+  background-color: #756257;
 }
 
 .control {
@@ -2058,14 +2072,13 @@ padding-top: 5px;
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+  top: 396px;
+  left: calc(50% - 715px/2);
 
 }
 
 .modal-form-container{
-  padding: 54px 68px 40px 67px;
+  padding: 54px 68px 69px 67px;
   border: none;
 }
 
@@ -2116,7 +2129,7 @@ padding-top: 5px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  padding: 19px 256px 24px 256px;
+  padding: 19px 256px 21px 256px;
   border: none;
 }
 
@@ -2138,10 +2151,6 @@ padding-top: 5px;
 
 }
 
-.modal-button {
-
-}
-
 .field-group {
   display: grid;
   grid-template-columns: 157px 419px;
@@ -2153,7 +2162,7 @@ padding-top: 5px;
   grid-column: 1 / 2;
   font-weight: bold;
   font-size: 18px;
-  line-height: 48px;
+  line-height: 51px;
   align-items: center;
   color: #000000;
   text-align: start;
@@ -2162,16 +2171,25 @@ padding-top: 5px;
 
 .button-minus-adults{
   position: absolute;
-  right: 98px;
-  top: 11px;
   border: none;
+  left: 0;
+  top: 0;
+  width: 50px;
+  bottom: 0;
+  padding-bottom: 5px;
+  height: 46px;
+  background-color: #F2F2F2;
 }
 
 .button-plus-adults{
   position: absolute;
   border: none;
-  right: 20px;
-  top: 18px;
+  right: 0;
+  top: 0;
+  width: 50px;
+  bottom: 0;
+  height: 50px;
+  background-color: #F2F2F2;
 }
 
 .button-minus-children{
@@ -2200,7 +2218,19 @@ padding-top: 5px;
   line-height: 49px;
   color: #000000;
   text-align: center;
-  width: 130px;
+  width: 40px;
+  box-sizing: content-box;
+  padding: 0 47px;
+  outline: none;
+}
+
+.field-one::placeholder{
+  color:#000000;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
 }
 
 .field-one::-webkit-outer-spin-button,
@@ -2212,7 +2242,10 @@ padding-top: 5px;
 .field {
   grid-column: 2 / 3;
   margin: 0;
-  padding: 8px 14px;
+  padding-top: 7px;
+  padding-right: 17px;
+  padding-bottom: 8px;
+  padding-left: 17px;
   font: inherit;
   font-weight: 700;
   background-color: #F2F2F2;
@@ -2227,17 +2260,26 @@ padding-top: 5px;
   background-repeat: no-repeat;
   background-position: right 19px center;
 }
-
-.field-hint{
+.errore{
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   margin: 0;
+}
+
+.success{
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  margin: 0;
+}
+
+.field-hint{
   font-family: PT Sans;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 29px;
   color: #FF5757;
+  margin: 0;
   margin-bottom: 10px;
   text-align: start;
 }
@@ -2261,8 +2303,8 @@ color: #333333;
 .adults-children-wrapper{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 50px;
-  margin-bottom: 35px;
+  gap: 55px;
+  margin-bottom: 39px;
 }
 
 .adults-form{
@@ -2274,16 +2316,16 @@ color: #333333;
 }
 
 .form-label-adults {
-  /* grid-column: 1 / 2; */
   width: 155px;
+}
+
+.form-label-children {
+  width: 55px;
 }
 
 .field-adults {
   position: relative;
-}
-
-.form-label-children {
-  width: 97px;
+  height: 50px;
 }
 
 .field-children {
@@ -2304,10 +2346,57 @@ color: #333333;
   background-image: url("../img/info.svg");
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
+}
+
+.additional-info {
+  display: flex;
+  flex-direction: column;
+  width: 256px;
+  background-color: #333333;;
+  box-sizing: border-box;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,10%);
+  margin-top: 14px;
+}
+
+.additional-info-description {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  text-align: start;
+  margin: 0;
+  padding: 18px 18px 24px 22px;
+}
+
+.additional-info-wrapper{
+
+  position: relative;
+
+}
+
+.additional-info-wrapper::before{
+  position: absolute;
+  top: -8px;
+  left: 118px;
+  width: 20px;
+  height: 9px;
+  content: "";
+  background-image: url("../img/triangle-for-titual.svg");
+  border: none;
 }
 
 .children-info{
   margin-right: auto;
+  display: flex;
+  align-items: center;
 }
 
 .field-group input {
