@@ -2013,7 +2013,7 @@ padding-top: 5px;
   color: #333333;
   border: 2px solid #E6E6E6;
   border-radius: 4px;
-  padding: 13px 133px 12px 17px;
+  padding: 13px 13px 12px 17px;
 }
 
 
@@ -2144,12 +2144,15 @@ padding-top: 5px;
 .button-minus-children{
   position: absolute;
   right: 98px;
+  top: 11px;
   border: none;
 }
 
 .button-plus-children{
   position: absolute;
   border: none;
+  right: 20px;
+  top: 18px;
 }
 
 .field-one{
@@ -2173,10 +2176,6 @@ padding-top: 5px;
   margin: 0;
 }
 
-.field-two{
-
-}
-
 .field {
   grid-column: 2 / 3;
   margin: 0;
@@ -2191,8 +2190,11 @@ padding-top: 5px;
   font-size: 18px;
   line-height: 35px;
   color: #000000;
-  /* border: 2px solid #242424; */
+  background-image: url("../img/calendar-modal.svg");
+  background-repeat: no-repeat;
+  background-position: right 19px center;
 }
+
 .field-hint{
   grid-column: 2 / 3;
   grid-row: 2 / 3;
