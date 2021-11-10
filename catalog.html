@@ -168,12 +168,14 @@
     <section class="sorting">
       <h2>Найдено гостиниц: 38</h2>
       <form class="sorting-type">
+        <div class="select">
         <label class="visually-hidden" for="sorting">Сортировка</label>
         <select class="select-control" id="sorting" name="sorting">
           <option value="popular">Сначала дешевые</option>
           <option value="cheap">Средний диапазон</option>
           <option value="expensive">Сначала дорогое</option>
         </select>
+        </div>
         <button class="visually-hidden" type="submit">Отсортировать продукты</button>
       </form>
       <a href="#" class="card-grid-toggle" type="button">
@@ -303,12 +305,18 @@
         </li>
       </ul>
       <p>Гостиниц на странице:</p>
-      <select class="hotel-page">
-        <option value="4">4</option>
-        <option value="6">6</option>
-        <option value="8">8</option>
-        <option value="10">10</option>
-      </select>
+      <form class="sorting-hotel">
+        <div class="select-hotel">
+        <label class="visually-hidden" for="sorting-hotel">Сортировка</label>
+        <select class="hotel-page" id="sorting-hotel" name="sorting">
+          <option value="4">4</option>
+          <option value="6">6</option>
+          <option value="8">8</option>
+          <option value="10">10</option>
+        </select>
+        </div>
+        <button class="visually-hidden" type="submit">Отсортировать продукты</button>
+      </form>
     </footer>
   </main>
   <article class="subscription subscription-inner">
