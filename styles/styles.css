@@ -235,17 +235,22 @@ body {
 }
 
 .popup {
-  display: flex;
+  font-family: "PT Sans", sans-serif;
+  display: none;
   flex-direction: column;
   width: 400px;
   background-color: #ffffff;
-  /* border: 1px solid #e6e6e6; */
   box-sizing: border-box;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
   position: absolute;
   top: 50px;
   left:calc(50% - 420px/2);
+  z-index: 1;
+}
+
+.popup-open {
+  display: block;
 }
 
 .popup-wrapper {
@@ -2086,6 +2091,11 @@ padding-top: 5px;
   right: 0;
   left: 0;
   bottom: 0;
+  display: none;
+}
+
+.modal-open {
+  display: block;
 }
 
 .modal {
