@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="styles/styles.css">
 </head>
-
 <body class="page-body">
   <header class="main-header">
     <nav class="navigation">
@@ -49,13 +47,13 @@
               <h2 class="visually-hidden">Корзина</h2>
               <ul class="header-popup-list">
                 <li class="header-popup-item">
-                  <div class="popup-list-hotel">
+                  <div class="list-hotel-one" tabindex="1">
                     <img class="popup-foto" src="img/hotel-2-small.png" width="48" height="48" alt="Фото Седоны">
                     <p class="popup-name-hotel">Desert Quail Inn</p>
                     <p class="popup-accommodation-facility">Мотель</p>
                   </div>
-                  <button class="popup-basket" type="submit" aria-label="корзина"><svg style="opacity: 0.2;" width="16" height="16"
-                      xmlns="http://www.w3.org/2000/svg">
+                  <button class="popup-basket" type="submit" aria-label="корзина"><svg class="basket-icon" width="16"
+                      height="16" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M15.3 2.3H.6c-.3 0-.6.2-.6.5s.3.6.6.6h1.7v12c0 .3.3.6.6.6h10.2c.3 0 .6-.3.6-.6v-12h1.7c.3 0 .6-.3.6-.6s-.4-.5-.7-.5Zm-2.8 12.5H3.4V3.4h9.1v11.4ZM6.2 1.2h3.4c.3 0 .6-.3.6-.6S10 0 9.7 0H6.2c-.3 0-.5.3-.5.6s.2.6.5.6Z" />
                       <path
@@ -63,13 +61,13 @@
                     </svg></button>
                 </li>
                 <li class="header-popup-item">
-                  <div class="popup-list-hotel">
+                  <div class="list-hotel-two" tabindex="2">
                     <img class="popup-foto" src="img/hotel-3-small.png" width="48" height="48" alt="Фото Седоны">
                     <p class="popup-name-hotel">Villas at Poco Diablo</p>
                     <p class="popup-accommodation-facility">Апартаменты</p>
                   </div>
-                  <button class="popup-basket" type="submit" aria-label="корзина"><svg style="opacity: 0.2;" width="16" height="16"
-                      xmlns="http://www.w3.org/2000/svg">
+                  <button class="popup-basket" type="submit" aria-label="корзина"><svg class="basket-icon" width="16"
+                      height="16" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M15.3 2.3H.6c-.3 0-.6.2-.6.5s.3.6.6.6h1.7v12c0 .3.3.6.6.6h10.2c.3 0 .6-.3.6-.6v-12h1.7c.3 0 .6-.3.6-.6s-.4-.5-.7-.5Zm-2.8 12.5H3.4V3.4h9.1v11.4ZM6.2 1.2h3.4c.3 0 .6-.3.6-.6S10 0 9.7 0H6.2c-.3 0-.5.3-.5.6s.2.6.5.6Z" />
                       <path
@@ -87,10 +85,10 @@
   </header>
   <main class="main-index main-container">
     <div class="page-container">
-      <section class="description">
+      <div class="description">
         <img class="sedona-welcome" src="img/welcome.svg" width="458" height="352"
           alt="welcome to the gorgeous Sedona Because the Grand Canyon sucks">
-      </section>
+      </div>
       <section class="advantages-sedona">
         <h1 class="caption-sedona">Седона-небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
         <p class="reasons-to-come">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
@@ -229,30 +227,30 @@
             <label class="form-label" for="arrival-date">Дата заезда:</label>
             <input class="field" type="text" id="arrival-date" name="arrival-date" placeholder="27 апреля 2020">
             <div class="errore">
-            <p class="field-hint">Мы не можем отправить вас в прошлое.</p>
+              <p class="field-hint">Мы не можем отправить вас в прошлое.</p>
             </div>
           </div>
-          <span class="field-group form-date-of-departure">
+          <div class="field-group form-date-of-departure">
             <label class="form-label" for="date-of-departure">Дата выезда:</label>
             <input class="field" type="text" id="date-of-departure" name="date-of-departure"
               placeholder="1 сентября 2021">
-              <div class="success">
+            <div class="success">
               <p class="field-hint field-hint-paragraph">На эти даты есть свободные номера. Пока есть.</p>
-              </div>
-          </span>
+            </div>
+          </div>
           <div class="adults-children-wrapper">
             <div class="adults-form">
               <label class="form-label form-label-adults" for="adults">Взрослые:</label>
               <div class="field-adults">
-                <input class="field-one" type="number" id="adults" name="guests" min="1" max="16" placeholder="2">
                 <button class="button-minus-adults" type="button">
-                  <svg class="button-minus-plus" width="13" height="1" viewBox="0 0 13 1"
+                  <svg class="button-minus" tabindex="1" width="13" height="1" viewBox="0 0 13 1"
                     xmlns="http://www.w3.org/2000/svg">
-                    <path opacity=".3" d="M0 0v1h13V0H0Z" />
+                    <path d="M0 0v1h13V0H0Z" />
                   </svg>
                 </button>
+                <input class="field-one" type="number" id="adults" name="guests" min="1" max="16" placeholder="2">
                 <button class="button-plus-adults" type="button">
-                  <svg class="button-minus-plus" width="13" height="13" viewBox="0 0 13 13"
+                  <svg class="button-plus" width="13" height="13" viewBox="0 0 13 13"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" />
                   </svg>
@@ -266,36 +264,35 @@
                   <span class="visually-hidden">Посмотреть дополнительную информацию</span>
                   <div class="additional-info">
                     <div class="additional-info-wrapper">
-                    <p class="additional-info-description">
-                      Укажите количество детей,<br> которые будут с вами, возраст <br> которых от 6 до 18 лет. Дети <br>
-                      до 6 лет размещаются <br> бесплатно.
-                    </p>
+                      <p class="additional-info-description">
+                        Укажите количество детей,<br> которые будут с вами, возраст <br> которых от 6 до 18 лет. Дети
+                        <br>
+                        до 6 лет размещаются <br> бесплатно.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="field-adults">
-              <input class="field-one" type="number" id="children" name="guests" min="1" max="16" placeholder="1">
-              <button class="button-minus-adults" type="button">
-                <svg class="button-minus-plus" width="13" height="1" viewBox="0 0 13 1"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path opacity=".3" d="M0 0v1h13V0H0Z" />
-                </svg>
-              </button>
-              <button class="button-plus-adults" type="button">
-                <svg class="button-minus-plus" width="13" height="13" viewBox="0 0 13 13"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" />
-                </svg>
-              </button>
+              <div class="field-adults">
+                <input class="field-one" type="number" id="children" name="guests" min="1" max="16" placeholder="1">
+                <button class="button-minus-adults" type="button">
+                  <svg class="button-minus" width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0v1h13V0H0Z" />
+                  </svg>
+                </button>
+                <button class="button-plus-adults" type="button">
+                  <svg class="button-plus" width="13" height="13" viewBox="0 0 13 13"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
-    </div>
-    <button class="modal-button" type="submit">Найти</button>
-    </fieldset>
-    </form>
+          <button class="modal-button" type="submit">Найти</button>
+        </fieldset>
+      </form>
     </div>
   </section>
 </body>
-
 </html>
