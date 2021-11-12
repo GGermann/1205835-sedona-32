@@ -526,6 +526,8 @@ body {
 .caption-sedona {
   background: #ffffff;
   color: #000000;
+  font-family: "PT Sans";
+  font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -1956,12 +1958,36 @@ padding-top: 5px;
   color: #FFFFFF;
   background-color: #83B3D3;
   border-radius: 4px;
-  padding: 14px 241px 14px 241px;
+  padding: 11px 238px 11px 238px;
   margin-top: 30px;
   margin-bottom: 30px;
   margin-left: 215px;
   border: none;
   cursor: pointer;
+  border: 3px solid transparent;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.cards-button:hover {
+  background-color: #68A2CA;
+  border: 3px solid transparent;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.cards-button:active {
+  background-color: #68A2CA;
+  border: 3px solid transparent;
+  color: #ffffff4d;
+  outline: none;
+}
+
+.cards-button:focus {
+  background-color: #68A2CA;
+  border: 3px solid #756257;
+  color: #ffffff4d;
+  outline: none;
 }
 
 .footer-pagination {
@@ -2091,11 +2117,11 @@ padding-top: 5px;
   right: 0;
   left: 0;
   bottom: 0;
-  display: none;
+  display: block;
 }
 
-.modal-open {
-  display: block;
+.modal-close {
+  display: none;
 }
 
 .modal {
@@ -2548,6 +2574,11 @@ color: #333333;
 
 .additional-info-wrapper {
   position: relative;
+  display: none;
+}
+
+.info-description-open {
+  display: block;
 }
 
 .additional-info-wrapper::before {
