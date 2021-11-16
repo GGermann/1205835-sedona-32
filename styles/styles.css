@@ -128,7 +128,6 @@ img {
 }
 
 .navigation-item-user:nth-last-child(2) {
-  /* padding-right: 23px; */
   position: relative;
 }
 
@@ -1061,7 +1060,6 @@ img {
   padding: 8px 15px 8px 15px;
   box-sizing: border-box;
   word-spacing: -2px;
-  /* letter-spacing: 2px; */
 }
 
 .contacts-phone:focus {
@@ -1763,7 +1761,6 @@ img {
   border: 3px solid transparent;
   box-sizing: content-box;
   border-radius: 10px;
-  /* padding: 10px; */
 }
 
 .rating-stars {
@@ -2611,6 +2608,6 @@ img {
   padding: 0;
   white-space: nowrap;
   overflow: hidden;
-  clip: rect(0 0 0 0); /* IE6, IE7 */
+  clip: rect(0 0 0 0);
   clip-path: inset(100%);
 }
